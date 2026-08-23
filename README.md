@@ -21,13 +21,13 @@ The goal of this session is to demonstrate how genome-wide association studies (
 ```text
 gwas-gs-workshop/
 ├── README.md
-├── Computer requirement and setup.pdf
-├── 01_Theory review/
+├── Module.pdf
+├── Lectures/
 │   └── theoretical_bridge_and_data.pdf
-├── 02_dataset/
+├── Datasets/
 │   ├── SampleGenotypeData.hmp.xlsx
 │   └── Phenotype data.xlsx
-└── 03_script/
+└── Scripts/
     ├── EWINDO_0_GenoConversion.R
     ├── EWINDO_1_Imputation.txt
     ├── EWINDO_1a_VCF_Decompression.R

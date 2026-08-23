@@ -1,0 +1,18 @@
+# ==============================================================================
+# WSL MARKER THINNING VIA VCFTOOLS
+# ==============================================================================
+
+# 1. Navigate to your Windows working directory
+cd "/mnt/d/EWINDO Workshop"
+
+# 2. Install VCFtools (enter your Linux password if prompted)
+sudo apt update && sudo apt install -y vcftools
+
+# 3. Thin VCF dataset (1 SNP per 1,000 bp / 1 Kb)
+vcftools --gzvcf geno_imputed.vcf \
+         --thin 1000 \
+         --recode \
+         --recode-INFO-all \
+         --out geno_thin
+
+# Result: Creates 'geno_thin.recode.vcf' for PCA and Kinship analysis

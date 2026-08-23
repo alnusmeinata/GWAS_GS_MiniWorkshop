@@ -1,0 +1,1 @@
+java -Xmx4g -jar beagle.27Feb25.75f.jar gt=geno_qc.vcf out=geno_imputed

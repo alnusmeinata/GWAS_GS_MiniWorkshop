@@ -1,6 +1,6 @@
 # Mini-Workshop: Accelerating Breeding with GWAS & Genomic Selection (GS)
 
-Welcome! This 90-minute hands-on workshop is designed for breeders and plant/animal scientists with basic breeding theory background
+Welcome! This 105-minute hands-on workshop is designed for breeders and plant/animal scientists with a basic background in breeding theory.
 
 The goal of this session is to demonstrate how genome-wide association studies (GWAS) and genomic selection (GS) accelerate genetic gain ($\Delta G$) by shortening breeding cycles and improving selection accuracy—without getting bogged down in complex programming.
 
@@ -10,10 +10,9 @@ The goal of this session is to demonstrate how genome-wide association studies (
 
 | Part | Module | Time | Focus / Key Deliverable |
 | :--- | :--- | :--- | :--- |
-| **Part 1** | **Theory Review / Small Lecture** | 20 min | Core principles of GWAS (MAS/QTL) vs. GS (GEBVs) and data structure overview. |
-| **Part 2** | **Software Installation Check** | 10 min | Verification of R, RStudio, and required package installations on participant laptops. |
-| **Part 3** | **Initial Familiarity with R** | 15 min | Learning RStudio interface basics: script window, console, environment, and `Ctrl + Enter`. |
-| **Part 4** | **Mini-Workshop: Follow Along** | 45 min | Running `run_gwas_gs.R` line-by-line: allele coding, Manhattan plots, kinship, and GEBVs. |
+| **Part 1** | **Briefing & Theory Review** | 15 min | Overview of core GWAS (MAS/QTL) vs. GS (GEBVs) principles and workshop workflow. |
+| **Part 2** | **Software Installation & Setup Check** | 45 min | Verification and troubleshooting of R, RStudio, and required packages across participant environments. |
+| **Part 3** | **Hands-On Pipeline & Interpretation** | 45 min | Running the 12-script workflow line-by-line: genotype QC, kinship, GWAS, GS models, and interpreting output plots/results. |
 
 ---
 
@@ -29,4 +28,15 @@ gwas-gs-workshop/
 │   ├── SampleGenotypeData.hmp.xlsx
 │   └── Phenotype data.xlsx
 └── 03_script/
-    └── GWAS_GS_demo.R
+    ├── EWINDO_0_GenoConversion.R
+    ├── EWINDO_1_Imputation.txt
+    ├── EWINDO_1a_VCF_Decompression.R
+    ├── EWINDO_2_SNPs_thinning.txt
+    ├── EWINDO_3_VCF2CSV.R
+    ├── EWINDO_4_Population_Kinship.R
+    ├── EWINDO_5_Phenotype_treatment.R
+    ├── EWINDO_6_Genomic Heritability.R
+    ├── EWINDO_7_GWAS.R
+    ├── EWINDO_7a_ManhattanPlot.R
+    ├── EWINDO_8_GS_Gblup.R
+    └── EWINDO_8a_GS_plotting.R
